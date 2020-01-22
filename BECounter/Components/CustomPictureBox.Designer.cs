@@ -1,4 +1,4 @@
-﻿namespace BECounterNew.Components
+﻿namespace BECounter.Components
 {
     partial class CustomPictureBox
     {

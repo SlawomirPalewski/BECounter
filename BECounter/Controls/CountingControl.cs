@@ -12,7 +12,7 @@ using Newtonsoft.Json;
 using System.Reflection;
 using System.Diagnostics;
 
-namespace BECounterNew.Controls
+namespace BECounter.Controls
 {
     public partial class CountingControl : UserControl
     {
@@ -25,7 +25,7 @@ namespace BECounterNew.Controls
             InitializeComponent();
 
             if (LicenseManager.UsageMode == LicenseUsageMode.Designtime)
-                _executePath = "C:/Users/Dorokai/Source/repos/BECounter/BECounterNew/bin/Debug/";
+                _executePath = "C:/Users/Dorokai/Source/repos/BECounter/BECounter/bin/Debug/";
             else
                 _executePath = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 

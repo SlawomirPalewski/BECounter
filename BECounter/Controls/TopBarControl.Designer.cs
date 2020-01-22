@@ -1,4 +1,4 @@
-﻿namespace BECounterNew.Controls
+﻿namespace BECounter.Controls
 {
     partial class TopBarControl
     {

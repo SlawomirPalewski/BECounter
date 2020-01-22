@@ -1,4 +1,4 @@
-﻿namespace BECounterNew
+﻿namespace BECounter
 {
     partial class MainWindow
     {
@@ -30,8 +30,8 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainWindow));
             this.panelMain = new System.Windows.Forms.Panel();
-            this.countingControl = new BECounterNew.Controls.CountingControl();
-            this.topBarControl = new BECounterNew.Controls.TopBarControl();
+            this.countingControl = new BECounter.Controls.CountingControl();
+            this.topBarControl = new BECounter.Controls.TopBarControl();
             this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 

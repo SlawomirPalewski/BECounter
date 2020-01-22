@@ -1,4 +1,4 @@
-﻿namespace BECounterNew
+﻿namespace BECounter
 {
     partial class DialogWindow
     {
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.topBarControl = new BECounterNew.Controls.TopBarControl();
+            this.topBarControl = new BECounter.Controls.TopBarControl();
             this.panelMain = new System.Windows.Forms.Panel();
             this.buttonNo = new System.Windows.Forms.Button();
             this.buttonYes = new System.Windows.Forms.Button();

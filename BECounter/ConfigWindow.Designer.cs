@@ -1,4 +1,4 @@
-﻿namespace BECounterNew
+﻿namespace BECounter
 {
     partial class ConfigWindow
     {
@@ -31,14 +31,14 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConfigWindow));
             this.panelMain = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            this.checkBoxAlertLoad = new BECounterNew.Components.CustomCheckBox();
-            this.checkBoxAlertSave = new BECounterNew.Components.CustomCheckBox();
-            this.checkBoxAlertReset = new BECounterNew.Components.CustomCheckBox();
-            this.checkBoxAlertExit = new BECounterNew.Components.CustomCheckBox();
-            this.checkBoxLoad = new BECounterNew.Components.CustomCheckBox();
+            this.checkBoxAlertLoad = new BECounter.Components.CustomCheckBox();
+            this.checkBoxAlertSave = new BECounter.Components.CustomCheckBox();
+            this.checkBoxAlertReset = new BECounter.Components.CustomCheckBox();
+            this.checkBoxAlertExit = new BECounter.Components.CustomCheckBox();
+            this.checkBoxLoad = new BECounter.Components.CustomCheckBox();
             this.buttonClose = new System.Windows.Forms.Button();
             this.buttonSave = new System.Windows.Forms.Button();
-            this.topBarControl = new BECounterNew.Controls.TopBarControl();
+            this.topBarControl = new BECounter.Controls.TopBarControl();
             this.panelMain.SuspendLayout();
             this.tableLayoutPanel1.SuspendLayout();
             this.SuspendLayout();

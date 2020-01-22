@@ -11,9 +11,9 @@ using System.Net;
 using Newtonsoft.Json;
 using Newtonsoft.Json.Linq;
 using System.IO;
-using BECounterNew.Components;
+using BECounter.Components;
 
-namespace BECounterNew.Controls
+namespace BECounter.Controls
 {
     public partial class ChampionViewControl : UserControl
     {
@@ -30,7 +30,7 @@ namespace BECounterNew.Controls
             this.SetStyle(ControlStyles.OptimizedDoubleBuffer, true);
 
             if (LicenseManager.UsageMode == LicenseUsageMode.Designtime)
-                _executePath = "C:/Users/Dorokai/Source/repos/BECounter/BECounterNew/bin/Debug/";
+                _executePath = "C:/Users/Dorokai/Source/repos/BECounter/BECounter/bin/Debug/";
             else
                  _executePath = System.IO.Path.GetDirectoryName(Application.ExecutablePath);
 

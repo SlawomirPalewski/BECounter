@@ -1,4 +1,4 @@
-﻿namespace BECounterNew.Controls
+﻿namespace BECounter.Controls
 {
     partial class CountingControl
     {
@@ -45,7 +45,7 @@
             this.buttonReset = new System.Windows.Forms.Button();
             this.labelCurrentBE = new System.Windows.Forms.Label();
             this.numericUpDown = new System.Windows.Forms.NumericUpDown();
-            this.championViewControl = new BECounterNew.Controls.ChampionViewControl();
+            this.championViewControl = new BECounter.Controls.ChampionViewControl();
             this.panelCountingControl.SuspendLayout();
             this.tableLayoutPanel.SuspendLayout();
             this.panelButtons.SuspendLayout();

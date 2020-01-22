@@ -1,4 +1,4 @@
-﻿namespace BECounterNew
+﻿namespace BECounter
 {
     partial class InfoWindow
     {
@@ -31,8 +31,8 @@
             this.panelMain = new System.Windows.Forms.Panel();
             this.labelText = new System.Windows.Forms.Label();
             this.buttonOk = new System.Windows.Forms.Button();
-            this.topBarMainWindowControl = new BECounterNew.Controls.TopBarControl();
-            this.topBarControl = new BECounterNew.Controls.TopBarControl();
+            this.topBarMainWindowControl = new BECounter.Controls.TopBarControl();
+            this.topBarControl = new BECounter.Controls.TopBarControl();
             this.panelMain.SuspendLayout();
             this.SuspendLayout();
             // 
