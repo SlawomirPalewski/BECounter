@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27703.2000
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BECounter", "BECounterNew\BECounter.csproj", "{0818D914-A9A6-4CA7-8F9A-62F80E40D6AF}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BECounter", "BECounter\BECounter.csproj", "{0818D914-A9A6-4CA7-8F9A-62F80E40D6AF}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

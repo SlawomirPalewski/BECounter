@@ -43,7 +43,7 @@ namespace BECounterNew.Controls
         /// <param name="e"></param>
         private void ButtonHelp_Click(object sender, System.EventArgs e)
         {
-            String message = "Left click to +1, right click to -1. /r/nMade by Dorokai.";
+            String message = "Left click to +1, right click to -1. /r/nMade by Sławomir Palewski.";
             InfoWindow infoWindow = new InfoWindow("Help", message);
             infoWindow.ShowDialog();
         }
