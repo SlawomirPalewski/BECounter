@@ -13,9 +13,8 @@ namespace BECounterNew
 
     public class ChampionData
     {
-        public int id { get; set; }
-        public string name { get; set; }
-        public string image { get; set; }
-        public int price { get; set; }
+        public string Name { get; set; }
+        public string Image { get; set; }
+        public int Price { get; set; }
     }
 }

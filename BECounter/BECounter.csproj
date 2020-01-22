@@ -257,6 +257,8 @@
     <Content Include="Images\Rumble.png" />
     <Content Include="Images\Ryze.png" />
     <Content Include="Images\Sejuani.png" />
+    <Content Include="Images\Senna.png" />
+    <Content Include="Images\Sett.png" />
     <Content Include="Images\Shaco.png" />
     <Content Include="Images\Shen.png" />
     <Content Include="Images\Shyvana.png" />

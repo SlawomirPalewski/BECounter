@@ -52,17 +52,19 @@ namespace BECounterNew.Controls
         {
             _championData = championData;
             string directory;
+            int championCount = 0;
 
             foreach (ChampionData champion in championData)
             {
-                directory = _executePath +"/Images/"+ champion.image;
+                directory = _executePath +"/Images/"+ champion.Image;
 
-                _pbList.Add(new CustomPictureBox(directory, champion));
+                _pbList.Add(new CustomPictureBox(directory, champion, championCount));
 
-                _pbList[champion.id].ChangeChampionValue += new EventHandler<ChampionValueChangeArgs>(ChangeChampionValueEvent);
+                _pbList[championCount].ChangeChampionValue += new EventHandler<ChampionValueChangeArgs>(ChangeChampionValueEvent);
 
-                flowLayoutPanelChampionView.Controls.Add(_pbList[champion.id]);
+                flowLayoutPanelChampionView.Controls.Add(_pbList[championCount]);
 
+                championCount++;
             }
 
             LoadPanelTrueHeight();
@@ -75,10 +77,10 @@ namespace BECounterNew.Controls
         {
             _save = save;
 
-            foreach (SavedChampion sc in save.champion)
+            foreach (SavedChampion sc in save.Champion)
             {
-                CustomPictureBox cpb = _pbList.FirstOrDefault(x => x.championName.Equals(sc.name));
-                if (cpb.championName != null) cpb.championQuantity = sc.quantity;
+                CustomPictureBox cpb = _pbList.FirstOrDefault(x => x.championName.Equals(sc.Name));
+                if (cpb.championName != null) cpb.championQuantity = sc.Quantity;
                 cpb.RefreshLabel();
             }
         }
@@ -90,8 +92,8 @@ namespace BECounterNew.Controls
         /// <param name="e"></param>
         private void ChangeChampionValueEvent(object sender, ChampionValueChangeArgs e)
         {
-            SavedChampion sc = _save.champion[e.Id];
-            sc.quantity = e.Value;
+            SavedChampion sc = _save.Champion[e.Id];
+            sc.Quantity = e.Value;
 
             CountingLabelReload?.Invoke(sender, new EventArgs()); // If not null -> use
         }

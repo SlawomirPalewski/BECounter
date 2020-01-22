@@ -56,11 +56,11 @@ namespace BECounterNew.Controls
 
                 foreach (ChampionData cd in _championData)
                 {
-                    listSavedChampion.Add(new SavedChampion() { name = cd.name, quantity = 0 });
+                    listSavedChampion.Add(new SavedChampion() { Name = cd.Name, Quantity = 0 });
                 }
 
-                _save.currentBE = 0;
-                _save.champion = listSavedChampion;
+                _save.CurrentBE = 0;
+                _save.Champion = listSavedChampion;
             }
             championViewControl.LoadChampionSave(_save);
         }
@@ -148,9 +148,9 @@ namespace BECounterNew.Controls
         {
             if(_save != null)
             {
-                foreach (SavedChampion champion in _save.champion)
+                foreach (SavedChampion champion in _save.Champion)
                 {
-                    champion.quantity = 0;
+                    champion.Quantity = 0;
                 }
 
                 championViewControl.LoadChampionSave(_save);
@@ -163,7 +163,7 @@ namespace BECounterNew.Controls
         private void SaveChampions()
         {
             
-            _save.currentBE = Convert.ToInt32(numericUpDown.Value);
+            _save.CurrentBE = Convert.ToInt32(numericUpDown.Value);
             string jsonSave = JsonConvert.SerializeObject(_save);
             string fileName = _executePath + "/Data/Save.json";
 
@@ -183,7 +183,7 @@ namespace BECounterNew.Controls
                 _save = JsonConvert.DeserializeObject<Save>(json);
             }
             championViewControl.LoadChampionSave(_save);
-            numericUpDown.Value = _save.currentBE;
+            numericUpDown.Value = _save.CurrentBE;
 
             SetCountingLabels();
             
@@ -203,32 +203,32 @@ namespace BECounterNew.Controls
             {
                 foreach (ChampionData champion in _championData)
                 {
-                    SavedChampion champ = _save.champion.FirstOrDefault(x => x.name.Equals(champion.name));
-                    switch (champion.price)
+                    SavedChampion champ = _save.Champion.FirstOrDefault(x => x.Name.Equals(champion.Name));
+                    switch (champion.Price)
                     {
                         case 450:
-                            l90 += champ.quantity;
-                            total = total + 90 * champ.quantity;
+                            l90 += champ.Quantity;
+                            total = total + 90 * champ.Quantity;
                             break;
                         case 1350:
-                            l270 += champ.quantity;
-                            total = total + 270 * champ.quantity;
+                            l270 += champ.Quantity;
+                            total = total + 270 * champ.Quantity;
                             break;
                         case 3150:
-                            l630 += champ.quantity;
-                            total = total + 630 * champ.quantity;
+                            l630 += champ.Quantity;
+                            total = total + 630 * champ.Quantity;
                             break;
                         case 4800:
-                            l960 += champ.quantity;
-                            total = total + 960 * champ.quantity;
+                            l960 += champ.Quantity;
+                            total = total + 960 * champ.Quantity;
                             break;
                         case 6300:
-                            l1260 += champ.quantity;
-                            total = total + 1260 * champ.quantity;
+                            l1260 += champ.Quantity;
+                            total = total + 1260 * champ.Quantity;
                             break;
                         case 7800:
-                            l1560 += champ.quantity;
-                            total = total + 1560 * champ.quantity;
+                            l1560 += champ.Quantity;
+                            total = total + 1560 * champ.Quantity;
                             break;
                     }
                 }

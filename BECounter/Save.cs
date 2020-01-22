@@ -8,12 +8,12 @@ namespace BECounterNew
 {
     public class Save
     {
-        public int currentBE { get; set; }
-        public List<SavedChampion> champion { get; set; }
+        public int CurrentBE { get; set; }
+        public List<SavedChampion> Champion { get; set; }
     }
     public class SavedChampion
     {
-        public string name { get; set; }
-        public int quantity { get; set; }
+        public string Name { get; set; }
+        public int Quantity { get; set; }
     }
 }

@@ -24,19 +24,19 @@ namespace BECounterNew.Components
         public int championQuantity;
         private int _id;
 
-        public CustomPictureBox(string imageDirectory, ChampionData champion)
+        public CustomPictureBox(string imageDirectory, ChampionData champion, int championCount)
         {
             InitializeComponent();
 
             this.DoubleBuffered = true;
 
-            SetPictureBoxProperties(imageDirectory, champion.id);
-            SetLabelProperties(champion.name);
+            SetPictureBoxProperties(imageDirectory, championCount);
+            SetLabelProperties(champion.Name);
 
             InitToolTip();
             _tt.SetToolTip(this, PrepareTooltipText(champion));
 
-            _id = champion.id;
+            _id = championCount;
 
             this.Controls.Add(Label);
         }
@@ -111,7 +111,7 @@ namespace BECounterNew.Components
         /// <returns></returns>
         private string PrepareTooltipText(ChampionData champion)
         {
-            int sellPrice = 0, buyPriceWithShard = 0, buyPrice = champion.price;
+            int sellPrice = 0, buyPriceWithShard = 0, buyPrice = champion.Price;
 
             switch (buyPrice)
             {
@@ -141,7 +141,7 @@ namespace BECounterNew.Components
                     break;
             }
 
-            string tooltip = champion.name + "/n  Sell piece: " + sellPrice + " BE/n  Buy without piece: " + buyPrice + " BE/n  Buy with piece: " + buyPriceWithShard + " BE";
+            string tooltip = champion.Name + "\n  Sell piece: " + sellPrice + " BE\n  Buy without piece: " + buyPrice + " BE\n  Buy with piece: " + buyPriceWithShard + " BE";
             return tooltip;
         }
 
