@@ -308,16 +308,16 @@
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
-    <PreBuildEvent>
-    </PreBuildEvent>
+    <PreBuildEvent>if not exist $(TargetDir)Images (mkdir Images)
+if not exist $(TargetDir)Ico (mkdir Ico)
+if not exist $(TargetDir)Data (mkdir Data)
+
+robocopy $(ProjectDir)Images $(TargetDir)Images /s /e /xo
+robocopy  $(ProjectDir)Ico $(TargetDir)Ico /s /e /xo
+robocopy $(ProjectDir)Data $(TargetDir)Data /s /e /xo</PreBuildEvent>
   </PropertyGroup>
   <PropertyGroup>
-    <PostBuildEvent>if not exist $(OutDir)Images (mkdir Images)
-if not exist $(OutDir)Ico (mkdir Ico)
-if not exist $(OutDir)Data (mkdir Data)
-
-robocopy $(ProjectDir)\Images $(OutDir)\Images /s /e /xo
-robocopy  $(ProjectDir)\Ico $(OutDir)\Ico /s /e /xo
-robocopy $(ProjectDir)\Data $(OutDir)\Data /s /e /xo</PostBuildEvent>
+    <PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
