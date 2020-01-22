@@ -1,0 +1,323 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0818D914-A9A6-4CA7-8F9A-62F80E40D6AF}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>BECounterNew</RootNamespace>
+    <AssemblyName>BECounterNew</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.3\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ChampionCollection.cs" />
+    <Compile Include="ChampionValueChangeArgs.cs" />
+    <Compile Include="Components\CustomCheckBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CustomCheckBox.Designer.cs">
+      <DependentUpon>CustomCheckBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Components\CustomPictureBox.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Components\CustomPictureBox.Designer.cs">
+      <DependentUpon>CustomPictureBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ConfigWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ConfigWindow.Designer.cs">
+      <DependentUpon>ConfigWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ChampionViewControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\ChampionViewControl.Designer.cs">
+      <DependentUpon>ChampionViewControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\CountingControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\CountingControl.Designer.cs">
+      <DependentUpon>CountingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TopBarControl.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Controls\TopBarControl.Designer.cs">
+      <DependentUpon>TopBarControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DialogWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DialogWindow.Designer.cs">
+      <DependentUpon>DialogWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="InfoWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="InfoWindow.Designer.cs">
+      <DependentUpon>InfoWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MainWindow.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MainWindow.Designer.cs">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Save.cs" />
+    <EmbeddedResource Include="ConfigWindow.resx">
+      <DependentUpon>ConfigWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ChampionViewControl.resx">
+      <DependentUpon>ChampionViewControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\CountingControl.resx">
+      <DependentUpon>CountingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TopBarControl.resx">
+      <DependentUpon>TopBarControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DialogWindow.resx">
+      <DependentUpon>DialogWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="InfoWindow.resx">
+      <DependentUpon>InfoWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainWindow.resx">
+      <DependentUpon>MainWindow.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Data\Save.json" />
+    <None Include="Data\Template.json" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Ico\BE_icon.ico" />
+    <Content Include="Images\Aatrox.png" />
+    <Content Include="Images\Ahri.png" />
+    <Content Include="Images\Akali.png" />
+    <Content Include="Images\Alistar.png" />
+    <Content Include="Images\Amumu.png" />
+    <Content Include="Images\Anivia.png" />
+    <Content Include="Images\Annie.png" />
+    <Content Include="Images\Ashe.png" />
+    <Content Include="Images\Aurelion_Sol.png" />
+    <Content Include="Images\Azir.png" />
+    <Content Include="Images\Bard.png" />
+    <Content Include="Images\Blitzcrank.png" />
+    <Content Include="Images\Brand.png" />
+    <Content Include="Images\Braum.png" />
+    <Content Include="Images\Caitlyn.png" />
+    <Content Include="Images\Camille.png" />
+    <Content Include="Images\Cassiopeia.png" />
+    <Content Include="Images\Cho%27Gath.png" />
+    <Content Include="Images\Corki.png" />
+    <Content Include="Images\Darius.png" />
+    <Content Include="Images\Diana.png" />
+    <Content Include="Images\Draven.png" />
+    <Content Include="Images\Dr_Mundo.png" />
+    <Content Include="Images\Ekko.png" />
+    <Content Include="Images\Elise.png" />
+    <Content Include="Images\Evelynn.png" />
+    <Content Include="Images\Ezreal.png" />
+    <Content Include="Images\Fiddlesticks.png" />
+    <Content Include="Images\Fiora.png" />
+    <Content Include="Images\Fizz.png" />
+    <Content Include="Images\Galio.png" />
+    <Content Include="Images\Gangplank.png" />
+    <Content Include="Images\Garen.png" />
+    <Content Include="Images\Gnar.png" />
+    <Content Include="Images\Gragas.png" />
+    <Content Include="Images\Graves.png" />
+    <Content Include="Images\Hecarim.png" />
+    <Content Include="Images\Heimerdinger.png" />
+    <Content Include="Images\Illaoi.png" />
+    <Content Include="Images\Irelia.png" />
+    <Content Include="Images\Ivern.png" />
+    <Content Include="Images\Janna.png" />
+    <Content Include="Images\Jarvan_IV.png" />
+    <Content Include="Images\Jax.png" />
+    <Content Include="Images\Jayce.png" />
+    <Content Include="Images\Jhin.png" />
+    <Content Include="Images\Jinx.png" />
+    <Content Include="Images\Kai%27Sa.png" />
+    <Content Include="Images\Kalista.png" />
+    <Content Include="Images\Karma.png" />
+    <Content Include="Images\Karthus.png" />
+    <Content Include="Images\Kassadin.png" />
+    <Content Include="Images\Katarina.png" />
+    <Content Include="Images\Kayle.png" />
+    <Content Include="Images\Kayn.png" />
+    <Content Include="Images\Kennen.png" />
+    <Content Include="Images\Kha%27Zix.png" />
+    <Content Include="Images\Kindred.png" />
+    <Content Include="Images\Kled.png" />
+    <Content Include="Images\Kog%27Maw.png" />
+    <Content Include="Images\LeBlanc.png" />
+    <Content Include="Images\Lee_Sin.png" />
+    <Content Include="Images\Leona.png" />
+    <Content Include="Images\Lissandra.png" />
+    <Content Include="Images\Lucian.png" />
+    <Content Include="Images\Lulu.png" />
+    <Content Include="Images\Lux.png" />
+    <Content Include="Images\Malphite.png" />
+    <Content Include="Images\Malzahar.png" />
+    <Content Include="Images\Maokai.png" />
+    <Content Include="Images\Master_Yi.png" />
+    <Content Include="Images\Miss_Fortune.png" />
+    <Content Include="Images\Mordekaiser.png" />
+    <Content Include="Images\Morgana.png" />
+    <Content Include="Images\Nami.png" />
+    <Content Include="Images\Nasus.png" />
+    <Content Include="Images\Nautilus.png" />
+    <Content Include="Images\Neeko.png" />
+    <Content Include="Images\Nidalee.png" />
+    <Content Include="Images\Nocturne.png" />
+    <Content Include="Images\Nunu.png" />
+    <Content Include="Images\Olaf.png" />
+    <Content Include="Images\Orianna.png" />
+    <Content Include="Images\Ornn.png" />
+    <Content Include="Images\Pantheon.png" />
+    <Content Include="Images\Poppy.png" />
+    <Content Include="Images\Pyke.png" />
+    <Content Include="Images\Qiyana.png" />
+    <Content Include="Images\Quinn.png" />
+    <Content Include="Images\Rakan.png" />
+    <Content Include="Images\Rammus.png" />
+    <Content Include="Images\Rek%27Sai.png" />
+    <Content Include="Images\Renekton.png" />
+    <Content Include="Images\Rengar.png" />
+    <Content Include="Images\Riven.png" />
+    <Content Include="Images\Rumble.png" />
+    <Content Include="Images\Ryze.png" />
+    <Content Include="Images\Sejuani.png" />
+    <Content Include="Images\Shaco.png" />
+    <Content Include="Images\Shen.png" />
+    <Content Include="Images\Shyvana.png" />
+    <Content Include="Images\Singed.png" />
+    <Content Include="Images\Sion.png" />
+    <Content Include="Images\Sivir.png" />
+    <Content Include="Images\Skarner.png" />
+    <Content Include="Images\Sona.png" />
+    <Content Include="Images\Soraka.png" />
+    <Content Include="Images\Swain.png" />
+    <Content Include="Images\Sylas.png" />
+    <Content Include="Images\Syndra.png" />
+    <Content Include="Images\Tahm_Kench.png" />
+    <Content Include="Images\Taliyah.png" />
+    <Content Include="Images\Talon.png" />
+    <Content Include="Images\Taric.png" />
+    <Content Include="Images\Teemo.png" />
+    <Content Include="Images\Thresh.png" />
+    <Content Include="Images\Tristana.png" />
+    <Content Include="Images\Trundle.png" />
+    <Content Include="Images\Tryndamere.png" />
+    <Content Include="Images\Twisted_Fate.png" />
+    <Content Include="Images\Twitch.png" />
+    <Content Include="Images\Udyr.png" />
+    <Content Include="Images\Urgot.png" />
+    <Content Include="Images\Varus.png" />
+    <Content Include="Images\Vayne.png" />
+    <Content Include="Images\Veigar.png" />
+    <Content Include="Images\Vel%27Koz.png" />
+    <Content Include="Images\Vi.png" />
+    <Content Include="Images\Viktor.png" />
+    <Content Include="Images\Vladimir.png" />
+    <Content Include="Images\Volibear.png" />
+    <Content Include="Images\Warwick.png" />
+    <Content Include="Images\Wukong.png" />
+    <Content Include="Images\Xayah.png" />
+    <Content Include="Images\Xerath.png" />
+    <Content Include="Images\Xin_Zhao.png" />
+    <Content Include="Images\Yasuo.png" />
+    <Content Include="Images\Yorick.png" />
+    <Content Include="Images\Yuumi.png" />
+    <Content Include="Images\Zac.png" />
+    <Content Include="Images\Zed.png" />
+    <Content Include="Images\Ziggs.png" />
+    <Content Include="Images\Zilean.png" />
+    <Content Include="Images\Zoe.png" />
+    <Content Include="Images\Zyra.png" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PreBuildEvent>
+    </PreBuildEvent>
+  </PropertyGroup>
+  <PropertyGroup>
+    <PostBuildEvent>if not exist $(OutDir)Images (mkdir Images)
+if not exist $(OutDir)Ico (mkdir Ico)
+if not exist $(OutDir)Data (mkdir Data)
+
+robocopy $(ProjectDir)\Images $(OutDir)\Images /s /e /xo
+robocopy  $(ProjectDir)\Ico $(OutDir)\Ico /s /e /xo
+robocopy $(ProjectDir)\Data $(OutDir)\Data /s /e /xo</PostBuildEvent>
+  </PropertyGroup>
+</Project>

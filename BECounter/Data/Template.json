@@ -1,0 +1,872 @@
+[
+{
+id: 0,
+name: "Aatrox",
+image: "Aatrox.png",
+price: 6300
+},
+{
+id: 1,
+name: "Ahri",
+image: "Ahri.png",
+price: 4800
+},
+{
+id: 2,
+name: "Akali",
+image: "Akali.png",
+price: 3150
+},
+{
+id: 3,
+name: "Alistar",
+image: "Alistar.png",
+price: 1350
+},
+{
+id: 4,
+name: "Amumu",
+image: "Amumu.png",
+price: 450
+},
+{
+id: 5,
+name: "Anivia",
+image: "Anivia.png",
+price: 3150
+},
+{
+id: 6,
+name: "Annie",
+image: "Annie.png",
+price: 450
+},
+{
+id: 7,
+name: "Ashe",
+image: "Ashe.png",
+price: 450
+},
+{
+id: 8,
+name: "Aurelion Sol",
+image: "Aurelion_Sol.png",
+price: 6300
+},
+{
+id: 9,
+name: "Azir",
+image: "Azir.png",
+price: 6300
+},
+{
+id: 10,
+name: "Bard",
+image: "Bard.png",
+price: 6300
+},
+{
+id: 11,
+name: "Blitzcrank",
+image: "Blitzcrank.png",
+price: 3150
+},
+{
+id: 12,
+name: "Brand",
+image: "Brand.png",
+price: 4800
+},
+{
+id: 13,
+name: "Braum",
+image: "Braum.png",
+price: 6300
+},
+{
+id: 14,
+name: "Caitlyn",
+image: "Caitlyn.png",
+price: 4800
+},
+{
+id: 15,
+name: "Camille",
+image: "Camille.png",
+price: 6300
+},
+{
+id: 16,
+name: "Cassiopeia",
+image: "Cassiopeia.png",
+price: 4800
+},
+{
+id: 17,
+name: "Cho'Gath",
+image: "Cho'Gath.png",
+price: 1350
+},
+{
+id: 18,
+name: "Corki",
+image: "Corki.png",
+price: 3150
+},
+{
+id: 19,
+name: "Darius",
+image: "Darius.png",
+price: 4800
+},
+{
+id: 20,
+name: "Diana",
+image: "Diana.png",
+price: 4800
+},
+{
+id: 21,
+name: "Dr Mundo",
+image: "Dr_Mundo.png",
+price: 450
+},
+{
+id: 22,
+name: "Draven",
+image: "Draven.png",
+price: 4800
+},
+{
+id: 23,
+name: "Ekko",
+image: "Ekko.png",
+price: 6300
+},
+{
+id: 24,
+name: "Elise",
+image: "Elise.png",
+price: 4800
+},
+{
+id: 25,
+name: "Evelynn",
+image: "Evelynn.png",
+price: 1350
+},
+{
+id: 26,
+name: "Ezreal",
+image: "Ezreal.png",
+price: 4800
+},
+{
+id: 27,
+name: "Fiddlesticks",
+image: "Fiddlesticks.png",
+price: 1350
+},
+{
+id: 28,
+name: "Fiora",
+image: "Fiora.png",
+price: 4800
+},
+{
+id: 29,
+name: "Fizz",
+image: "Fizz.png",
+price: 4800
+},
+{
+id: 30,
+name: "Galio",
+image: "Galio.png",
+price: 3150
+},
+{
+id: 31,
+name: "Gangplank",
+image: "Gangplank.png",
+price: 3150
+},
+{
+id: 32,
+name: "Garen",
+image: "Garen.png",
+price: 450
+},
+{
+id: 33,
+name: "Gnar",
+image: "Gnar.png",
+price: 6300
+},
+{
+id: 34,
+name: "Gragas",
+image: "Gragas.png",
+price: 3150
+},
+{
+id: 35,
+name: "Graves",
+image: "Graves.png",
+price: 4800
+},
+{
+id: 36,
+name: "Hecarim",
+image: "Hecarim.png",
+price: 4800
+},
+{
+id: 37,
+name: "Heimerdinger",
+image: "Heimerdinger.png",
+price: 3150
+},
+{
+id: 38,
+name: "Illaoi",
+image: "Illaoi.png",
+price: 6300
+},
+{
+id: 39,
+name: "Irelia",
+image: "Irelia.png",
+price: 4800
+},
+{
+id: 40,
+name: "Ivern",
+image: "Ivern.png",
+price: 6300
+},
+{
+id: 41,
+name: "Janna",
+image: "Janna.png",
+price: 1350
+},
+{
+id: 42,
+name: "Jarvan IV",
+image: "Jarvan_IV.png",
+price: 4800
+},
+{
+id: 43,
+name: "Jax",
+image: "Jax.png",
+price: 1350
+},
+{
+id: 44,
+name: "Jayce",
+image: "Jayce.png",
+price: 4800
+},
+{
+id: 45,
+name: "Jhin",
+image: "Jhin.png",
+price: 6300
+},
+{
+id: 46,
+name: "Jinx",
+image: "Jinx.png",
+price: 6300
+},
+{
+id: 47,
+name: "Kai'Sa",
+image: "Kai'Sa.png",
+price: 6300
+},
+{
+id: 48,
+name: "Kalista",
+image: "Kalista.png",
+price: 6300
+},
+{
+id: 49,
+name: "Karma",
+image: "Karma.png",
+price: 3150
+},
+{
+id: 50,
+name: "Karthus",
+image: "Karthus.png",
+price: 3150
+},
+{
+id: 51,
+name: "Kassadin",
+image: "Kassadin.png",
+price: 3150
+},
+{
+id: 52,
+name: "Katarina",
+image: "Katarina.png",
+price: 3150
+},
+{
+id: 53,
+name: "Kayle",
+image: "Kayle.png",
+price: 450
+},
+{
+id: 54,
+name: "Kayn",
+image: "Kayn.png",
+price: 6300
+},
+{
+id: 55,
+name: "Kennen",
+image: "Kennen.png",
+price: 4800
+},
+{
+id: 56,
+name: "Kha'Zix",
+image: "Kha'Zix.png",
+price: 4800
+},
+{
+id: 57,
+name: "Kindred",
+image: "Kindred.png",
+price: 6300
+},
+{
+id: 58,
+name: "Kled",
+image: "Kled.png",
+price: 6300
+},
+{
+id: 59,
+name: "Kog'Maw",
+image: "Kog'Maw.png",
+price: 4800
+},
+{
+id: 60,
+name: "LeBlanc",
+image: "LeBlanc.png",
+price: 3150
+},
+{
+id: 61,
+name: "Lee Sin",
+image: "Lee_Sin.png",
+price: 4800
+},
+{
+id: 62,
+name: "Leona",
+image: "Leona.png",
+price: 4800
+},
+{
+id: 63,
+name: "Lissandra",
+image: "Lissandra.png",
+price: 4800
+},
+{
+id: 64,
+name: "Lucian",
+image: "Lucian.png",
+price: 6300
+},
+{
+id: 65,
+name: "Lulu",
+image: "Lulu.png",
+price: 4800
+},
+{
+id: 66,
+name: "Lux",
+image: "Lux.png",
+price: 3150
+},
+{
+id: 67,
+name: "Malphite",
+image: "Malphite.png",
+price: 1350
+},
+{
+id: 68,
+name: "Malzahar",
+image: "Malzahar.png",
+price: 4800
+},
+{
+id: 69,
+name: "Maokai",
+image: "Maokai.png",
+price: 4800
+},
+{
+id: 70,
+name: "Master Yi",
+image: "Master_Yi.png",
+price: 450
+},
+{
+id: 71,
+name: "Miss Fortune",
+image: "Miss_Fortune.png",
+price: 3150
+},
+{
+id: 72,
+name: "Mordekaiser",
+image: "Mordekaiser.png",
+price: 1350
+},
+{
+id: 73,
+name: "Morgana",
+image: "Morgana.png",
+price: 1350
+},
+{
+id: 74,
+name: "Nami",
+image: "Nami.png",
+price: 4800
+},
+{
+id: 75,
+name: "Nasus",
+image: "Nasus.png",
+price: 1350
+},
+{
+id: 76,
+name: "Nautilus",
+image: "Nautilus.png",
+price: 4800
+},
+{
+id: 77,
+name: "Neeko",
+image: "Neeko.png",
+price: 6300
+},
+{
+id: 78,
+name: "Nidalee",
+image: "Nidalee.png",
+price: 3150
+},
+{
+id: 79,
+name: "Nocturne",
+image: "Nocturne.png",
+price: 4800
+},
+{
+id: 80,
+name: "Nunu",
+image: "Nunu.png",
+price: 450
+},
+{
+id: 81,
+name: "Olaf",
+image: "Olaf.png",
+price: 3150
+},
+{
+id: 82,
+name: "Orianna",
+image: "Orianna.png",
+price: 4800
+},
+{
+id: 83,
+name: "Ornn",
+image: "Ornn.png",
+price: 6300
+},
+{
+id: 84,
+name: "Pantheon",
+image: "Pantheon.png",
+price: 3150
+},
+{
+id: 85,
+name: "Poppy",
+image: "Poppy.png",
+price: 450
+},
+{
+id: 86,
+name: "Pyke",
+image: "Pyke.png",
+price: 6300
+},
+{
+id: 87,
+name: "Qiyana",
+image: "Qiyana.png",
+price: 6300
+},
+{
+id: 88,
+name: "Quinn",
+image: "Quinn.png",
+price: 4800
+},
+{
+id: 89,
+name: "Rakan",
+image: "Rakan.png",
+price: 6300
+},
+{
+id: 90,
+name: "Rammus",
+image: "Rammus.png",
+price: 1350
+},
+{
+id: 91,
+name: "Rek'Sai",
+image: "Rek'Sai.png",
+price: 6300
+},
+{
+id: 92,
+name: "Renekton",
+image: "Renekton.png",
+price: 4800
+},
+{
+id: 93,
+name: "Rengar",
+image: "Rengar.png",
+price: 4800
+},
+{
+id: 94,
+name: "Riven",
+image: "Riven.png",
+price: 4800
+},
+{
+id: 95,
+name: "Rumble",
+image: "Rumble.png",
+price: 4800
+},
+{
+id: 96,
+name: "Ryze",
+image: "Ryze.png",
+price: 450
+},
+{
+id: 97,
+name: "Sejuani",
+image: "Sejuani.png",
+price: 4800
+},
+{
+id: 98,
+name: "Shaco",
+image: "Shaco.png",
+price: 3150
+},
+{
+id: 99,
+name: "Shen",
+image: "Shen.png",
+price: 3150
+},
+{
+id: 100,
+name: "Shyvana",
+image: "Shyvana.png",
+price: 3150
+},
+{
+id: 101,
+name: "Singed",
+image: "Singed.png",
+price: 450
+},
+{
+id: 102,
+name: "Sion",
+image: "Sion.png",
+price: 1350
+},
+{
+id: 103,
+name: "Sivir",
+image: "Sivir.png",
+price: 450
+},
+{
+id: 104,
+name: "Skarner",
+image: "Skarner.png",
+price: 4800
+},
+{
+id: 105,
+name: "Sona",
+image: "Sona.png",
+price: 3150
+},
+{
+id: 106,
+name: "Soraka",
+image: "Soraka.png",
+price: 450
+},
+{
+id: 107,
+name: "Swain",
+image: "Swain.png",
+price: 4800
+},
+{
+id: 108,
+name: "Sylas",
+image: "Sylas.png",
+price: 6300
+},
+{
+id: 109,
+name: "Syndra",
+image: "Syndra.png",
+price: 4800
+},
+{
+id: 110,
+name: "Tahm Kench",
+image: "Tahm_Kench.png",
+price: 6300
+},
+{
+id: 111,
+name: "Taliyah",
+image: "Taliyah.png",
+price: 6300
+},
+{
+id: 112,
+name: "Talon",
+image: "Talon.png",
+price: 4800
+},
+{
+id: 113,
+name: "Taric",
+image: "Taric.png",
+price: 1350
+},
+{
+id: 114,
+name: "Teemo",
+image: "Teemo.png",
+price: 1350
+},
+{
+id: 115,
+name: "Thresh",
+image: "Thresh.png",
+price: 4800
+},
+{
+id: 116,
+name: "Tristana",
+image: "Tristana.png",
+price: 1350
+},
+{
+id: 117,
+name: "Trundle",
+image: "Trundle.png",
+price: 4800
+},
+{
+id: 118,
+name: "Tryndamere",
+image: "Tryndamere.png",
+price: 1350
+},
+{
+id: 119,
+name: "Twisted Fate",
+image: "Twisted_Fate.png",
+price: 1350
+},
+{
+id: 120,
+name: "Twitch",
+image: "Twitch.png",
+price: 3150
+},
+{
+id: 121,
+name: "Udyr",
+image: "Udyr.png",
+price: 1350
+},
+{
+id: 122,
+name: "Urgot",
+image: "Urgot.png",
+price: 3150
+},
+{
+id: 123,
+name: "Varus",
+image: "Varus.png",
+price: 4800
+},
+{
+id: 124,
+name: "Vayne",
+image: "Vayne.png",
+price: 4800
+},
+{
+id: 125,
+name: "Veigar",
+image: "Veigar.png",
+price: 1350
+},
+{
+id: 126,
+name: "Vel'Koz",
+image: "Vel'Koz.png",
+price: 6300
+},
+{
+id: 127,
+name: "Vi",
+image: "Vi.png",
+price: 4800
+},
+{
+id: 128,
+name: "Viktor",
+image: "Viktor.png",
+price: 4800
+},
+{
+id: 129,
+name: "Vladimir",
+image: "Vladimir.png",
+price: 3150
+},
+{
+id: 130,
+name: "Volibear",
+image: "Volibear.png",
+price: 4800
+},
+{
+id: 131,
+name: "Warwick",
+image: "Warwick.png",
+price: 450
+},
+{
+id: 132,
+name: "Wukong",
+image: "Wukong.png",
+price: 4800
+},
+{
+id: 133,
+name: "Xayah",
+image: "Xayah.png",
+price: 6300
+},
+{
+id: 134,
+name: "Xerath",
+image: "Xerath.png",
+price: 4800
+},
+{
+id: 135,
+name: "Xin Zhao",
+image: "Xin_Zhao.png",
+price: 1350
+},
+{
+id: 136,
+name: "Yasuo",
+image: "Yasuo.png",
+price: 6300
+},
+{
+id: 137,
+name: "Yorick",
+image: "Yorick.png",
+price: 4800
+},
+{
+id: 138,
+name: "Yuumi",
+image: "Yuumi.png",
+price: 6300
+},
+{
+id: 139,
+name: "Zac",
+image: "Zac.png",
+price: 4800
+},
+{
+id: 140,
+name: "Zed",
+image: "Zed.png",
+price: 4800
+},
+{
+id: 141,
+name: "Ziggs",
+image: "Ziggs.png",
+price: 4800
+},
+{
+id: 142,
+name: "Zilean",
+image: "Zilean.png",
+price: 1350
+},
+{
+id: 143,
+name: "Zoe",
+image: "Zoe.png",
+price: 6300
+},
+{
+id: 144,
+name: "Zyra",
+image: "Zyra.png",
+price: 4800
+}
+]
